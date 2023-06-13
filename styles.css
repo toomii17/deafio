@@ -57,6 +57,12 @@ p {
   padding: 10px;
 }
 
+@media (max-width: 767px) {
+  header {
+    background-color: #333;
+  }
+}
+
 @media (max-width: 606px) {
   .column {
     flex: 100%;
@@ -64,6 +70,12 @@ p {
     color: yellow;
     border: 30px;
     color: blue chartreuse;
+  }
+}
+
+@media (min-width:1200px) {
+  header {
+    width: 1200px;
   }
 }
 
@@ -111,20 +123,15 @@ a {
 
 
 .button-menu-toggle {
-  display: ruby-base-container; color: yellow;
+  display: none;
+  color: yellow;
   background-color: blue;
-  
-  
+
+
 }
 
-@media (max-width: 768px) {
-  .column {
-    flex: 100%;
-  }
-
-
   .nav-links {
-    display: none;
+    display: flex;
   }
 
 
@@ -155,18 +162,29 @@ a {
 
 
   }
-}
 
-.container1{ 
+.container1 {
   display: inline-flex
-
-  
 }
+
 footer {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .greeting {
   text-align: center;
+}
+@media (max-width: 768px) {
+  .column {
+    flex: 100%;
+  }
+
+  .nav-links {
+    display: none;
+  }
+  .button-menu-toggle {
+    display: block;
+  }
 }
