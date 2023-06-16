@@ -167,12 +167,6 @@ a {
   display: inline-flex
 }
 
-footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .greeting {
   text-align: center;
 }
@@ -188,3 +182,17 @@ footer {
     display: block;
   }
 }
+
+footer {
+  background-color: lightblue;
+  color: white;
+  padding: 5px;
+
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
